@@ -1,0 +1,171 @@
+{
+    "brands": [
+        { "id": "IEADVMHZI43SR4T2", "name": "Coral" },
+        { "id": "IEADVMHZI43SR5EB", "name": "Ladbrokes" },
+        { "id": "IEADVMHZI43TEAH3", "name": "Foxy" },
+        { "id": "IEADVMHZI43SR6QN",  "name": "Gala" }
+    ],
+    "tasks": [
+        { 
+            "id": 1, 
+            "name": "Copy", 
+            "subtasks": ["Copy Creation", "Copy Amends"] 
+        },{ 
+            "id": 2, 
+            "name": "Design", 
+            "subtasks": ["Design Creation", "Design Amends", "Design Asset Creation"] 
+        },{ 
+            "id": 3, 
+            "name": "Motion", 
+            "subtasks": ["Motion Creation", "Motion Amends"] 
+        },{ 
+            "id": 4, 
+            "name": "Developer", 
+            "subtasks": ["Developer Creation", "Developer Amends"] 
+        }
+    ],
+    "assets": [
+        { 
+            "id": 1,
+            "content": [
+                {
+                  "name": "Promo Pack",
+                  "asset": [
+                    { "id": 1, "value": "Banner Copy" },
+                    { "id": 2, "value": "Promo Hub" },
+                    { "id": 3, "value": "V6" },
+                    { "id": 4, "value": "Landing Page" },
+                    { "id": 5, "value": "Social Media" },
+                    { "id": 6, "value": "PAT Page" },
+                    { "id": 7, "value": "EDS" }
+                  ]
+                },{
+                  "name": "Treasure Chest",
+                  "asset": [
+                    { "id": 1, "value": "Overlay" },
+                    { "id": 2, "value": "Inbox (CRM)" },
+                    { "id": 3, "value": "Toaster" },
+                    { "id": 4, "value": "SMS" },
+                    { "id": 5, "value": "Intro" },
+                    { "id": 6, "value": "Push (CRM)" },
+                    { "id": 7, "value": "Email (CRM)" },
+                    { "id": 8, "value": "Reminder Comms " }
+                  ]
+                }
+              ]
+        },{ 
+            "id": 2,
+            "content": [
+                {
+                  "name": "Full Promo Pack",
+                  "asset": [
+                    { "name": "HT Mobile - L", "value": "480x200" },
+                    { "name": "HT Desktop - L", "value": "1600x450" },
+                    { "name": "Hp Slider", "value": "1210x328" },
+                    { "name": "Promo Page Background", "value": "1210x328" },
+                    { "name": "Promo Page Foreground", "value": "605x328" },
+                    { "name": "Promo Hub", "value": "800x360" },
+                    { "name": "Email Banner", "value": "600x240" },
+                    { "name": "Inbox Full View", "value": "690x246" },
+                    { "name": "Inbox Overlay", "value": "420x123" },
+                    { "name": "Inbox Preview", "value": "66x65" },
+                    { "name": "Desktop LP", "value": "1920x938" },
+                    { "name": "Tablet LP", "value": "1024x1366" },
+                    { "name": "Mobile LP", "value": "828x1144" }
+                  ]
+                },
+                {
+                  "name": "Gaming Static (Standard)",
+                  "asset": [
+                    { "name": "Instagram_Twitter_Facebook", "value": "1080x1080" },
+                    { "name": "Facebook_Profile", "value": "180x180" },
+                    { "name": "Facebook_RightHand", "value": "255x133" },
+                    { "name": "CRM", "value": "335x280" },
+                    { "name": "Snapchat", "value": "360x600" },
+                    { "name": "Twitter", "value": "800x800" },
+                    { "name": "Facebook_Cover", "value": "851x315" },
+                    { "name": "Carousel", "value": "936x370" },
+                    { "name": "Android_Push", "value": "1038x600" },
+                    { "name": "iOS_Push", "value": "1038x800" },
+                    { "name": "Instagram", "value": "1080x1920" },
+                    { "name": "Snapchat", "value": "1080x1920" },
+                    { "name": "Facebook", "value": "1200x628" }
+                  ]
+                },
+                {
+                  "name": "Sports Static (Standard)",
+                  "asset": [
+                    { "name": "1038x800_iOS_Push", "value": "1038x800" },
+                    { "name": "Android_Push", "value": "1038x600" },
+                    { "name": "CRM", "value": "680x400" },
+                    { "name": "CRM", "value": "680x300" },
+                    { "name": "Sub Feature", "value": "330x348" },
+                    { "name": "CRM", "value": "335x280" },
+                    { "name": "Carousel", "value": "936x370" },
+                    { "name": "Facebook", "value": "1200x628" },
+                    { "name": "Facebook_Post", "value": "1200x900" },
+                    { "name": "Facebook_Cover", "value": "851x315" },
+                    { "name": "Facebook_RightHand", "value": "255x133" },
+                    { "name": "Facebook_Profile", "value": "180x180" },
+                    { "name": "Snapchat", "value": "360x600" },
+                    { "name": "Instagram", "value": "1080x1920" },
+                    { "name": "Snapchat", "value": "1080x1920" },
+                    { "name": "Instagram_Twitter_Facebook", "value": "1080x1080" }
+                  ]
+                }
+              ]
+        },{ 
+            "id": 3,
+            "content": [
+                {
+                  "name": "Motion Asset",
+                  "asset": [{ "name": "Promo Banner" }, { "name": "GIFs" }]
+                }
+              ]
+        },{ 
+            "id": 4,
+            "content": [
+                {
+                  "name": "Developer Assets",
+                  "asset": [
+                    { "name": "Promo Pack" },
+                    { "name": "Game Build" },
+                    { "name": "Inbox / Treasure Chest" },
+                    { "name": "Landing Page" }
+                  ]
+                }
+              ]
+        }
+    ],
+    "scomms": [
+        { 
+            "id": 1, 
+            "name": ["Stakeholder Copy Review"] 
+        },{ 
+            "id": 2, 
+            "name": ["Stakeholder Design Review", "Stakeholder Design Assets Review"] 
+        },{ 
+            "id": 3, 
+            "name": ["Stakeholder Motion Review"] 
+        },{ 
+            "id": 4, 
+            "name": ["Stakeholder Dev Review"] 
+        }
+    ],
+    "players": [
+        { "id": 1, "name": "All" },
+        { "id": 2, "name": "New Customers" },
+        { "id": 3, "name": "Returning Customers" },
+        { "id": 4, "name": "VIP Customers" }
+    ],
+    "priority": [
+        { "id": 1, "name": "Low" },
+        { "id": 2, "name": "Medium" },
+        { "id": 3, "name": "High" }
+    ],
+    "campaign": [
+        {"id": 1, "name": "New"},
+        {"id": 2, "name": "Recurring"},
+        {"id": 3, "name": "Promotion"}
+    ]
+}
