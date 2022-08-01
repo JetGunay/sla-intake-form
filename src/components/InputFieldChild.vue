@@ -10,7 +10,7 @@
         </div>
     </div>
     <!-- Requestor Name / Team || Briefing Description -->
-    <div class="col" >
+    <!-- <div class="col" >
         <Header title="Requestor Name"/>
         <div class="form-group">
             <input class="form-control text-sm"
@@ -29,7 +29,7 @@
                 @input="$emit('update:teamInput', $event.target.value)"
             >
         </div>
-    </div>
+    </div> -->
 </template>
 
 <script>
@@ -43,16 +43,16 @@ export default {
             default: "",
             required: true
         },
-        nameInput: {
-            type: String,
-            default: "",
-            required: true
-        },
-        teamInput: {
-            type: String,
-            default: "",
-            required: true
-        },
+        // nameInput: {
+        //     type: String,
+        //     default: "",
+        //     required: true
+        // },
+        // teamInput: {
+        //     type: String,
+        //     default: "",
+        //     required: true
+        // },
     },
     components: {
         Header,

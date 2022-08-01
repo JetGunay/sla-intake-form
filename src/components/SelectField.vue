@@ -1,7 +1,7 @@
 <template>
   <select class="form-select form-select-sm" @change="checkValue">
     <option selected disabled>{{label}}</option>
-    <option v-for="(option, index) in options" :key="index" :value="option.id">{{option.name}}</option>
+    <option v-for="(option, index) in options" :key="index" :value="option.id">{{option.title}}</option>
   </select>
 </template>
 <script>

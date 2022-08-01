@@ -1,15 +1,22 @@
 <template>
   <div class="form-group mt-4">
-    <Datepicker v-model="datepicker" 
-    :format="format" 
-    class="dp__theme_light"
-    :disabledWeekDays="[6,0]"
+    <Datepicker 
+    v-model="datepicker"
+    autoApply
     weekStart="0"
-    @update:modelValue="checkDate"></Datepicker>
+    class="dp__theme_light"
+    :format="format" 
+    :disabledWeekDays="[6,0]"
+    :readonly="false"
+    :enableTimePicker="false"
+    :minDate="calcDate"
+    :maxDate="comDate"
+    @update:modelValue="checkDate" />
   </div>
 </template>
 <script>
 import Datepicker from '@vuepic/vue-datepicker';
+import moment from "moment";
 import '@vuepic/vue-datepicker/dist/main.css'
 import { ref } from 'vue'
 export default {
@@ -19,27 +26,40 @@ export default {
   },
   data(){
     return {
-      date: new Date()
+      date: this.calcDate,
     }
   },
-  setup(){
-    const datepicker = ref(new Date());
+  props: {
+    calcDate: Date,
+  },
+  setup(props){
+    const datepicker = ref(new Date(props.calcDate));
     // const datepicker = ref(null);
-    const format = (date) => {
-      const dd = String(date.getDate()).padStart(2, "0");
-      const mm = String(date.getMonth() +1).padStart(2, "0");
-      const yy = date.getFullYear();
-
-      return `${yy}-${mm}-${dd}`
-    }
+    const format = (datepicker) => {
+      const date = moment(datepicker).format("ddd, MMMM Do YYYY");
+      return date;
+    };
     return {
       format,
       datepicker
     }
   },
+  computed: {
+    datepick() {
+      console.log("date " + this.date)
+      return new Date(this.calcDate);
+    },
+    comDate() {
+      return new Date(this.datepick.setDate(this.datepick.getDate() + 14));
+    },
+  },
+  watch: {},
   methods: {
     checkDate(datepicker){
       this.$emit('checkDate', datepicker)
+    },
+    getDate() {
+      return this.calcDate
     }
   }
 }

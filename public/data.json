@@ -1,171 +1,254 @@
 {
-    "brands": [
-        { "id": "IEADVMHZI43SR4T2", "name": "Coral" },
-        { "id": "IEADVMHZI43SR5EB", "name": "Ladbrokes" },
-        { "id": "IEADVMHZI43TEAH3", "name": "Foxy" },
-        { "id": "IEADVMHZI43SR6QN",  "name": "Gala" }
-    ],
-    "tasks": [
-        { 
-            "id": 1, 
-            "name": "Copy", 
-            "subtasks": ["Copy Creation", "Copy Amends"] 
-        },{ 
-            "id": 2, 
-            "name": "Design", 
-            "subtasks": ["Design Creation", "Design Amends", "Design Asset Creation"] 
-        },{ 
-            "id": 3, 
-            "name": "Motion", 
-            "subtasks": ["Motion Creation", "Motion Amends"] 
-        },{ 
-            "id": 4, 
-            "name": "Developer", 
-            "subtasks": ["Developer Creation", "Developer Amends"] 
+  "brands": [
+    { "id": "IEADVMHZI43SR4T2", "title": "Coral" },
+    { "id": "IEADVMHZI43SR5EB", "title": "Ladbrokes" },
+    { "id": "IEADVMHZI43TEAH3", "title": "Foxy" },
+    { "id": "IEADVMHZI43SR6QN",  "title": "Gala" }
+  ],
+  "tasks": [
+    { 
+      "id": 1, 
+      "name": "Copy", 
+      "subtasks": ["Copy Creation", "Copy Amends"],
+      "days": 3
+    },{ 
+      "id": 2, 
+      "name": "Design", 
+      "subtasks": ["Design Creation", "Design Amends", "Design Asset Creation"] ,
+      "days": 5
+    },{ 
+      "id": 3, 
+      "name": "Motion", 
+      "subtasks": ["Motion Creation", "Motion Amends"],
+      "days": 3
+    },{ 
+      "id": 4, 
+      "name": "Developer", 
+      "subtasks": ["Developer Creation", "Developer Amends"],
+      "days": 3
+    }
+  ],
+  "assets": [
+    { 
+      "id": 1,
+      "content": [
+        {
+          "id": 1,
+          "name": "Promo Pack",
+          "asset": [
+            { "name": "Banner Copy" },
+            { "name": "Promo Hub" },
+            { "name": "V6" },
+            { "name": "Landing Page" },
+            { "name": "Social Media" },
+            { "name": "PAT Page" },
+            { "name": "EDS" }
+          ]
+        },{
+          "id": 2,
+          "name": "Treasure Chest",
+          "asset": [
+            { "name": "Overlay" },
+            { "name": "Inbox (CRM)" },
+            { "name": "Toaster" },
+            { "name": "SMS" },
+            { "name": "Intro" },
+            { "name": "Push (CRM)" },
+            { "name": "Email (CRM)" },
+            { "name": "Reminder Comms " }
+          ]
         }
-    ],
-    "assets": [
-        { 
-            "id": 1,
-            "content": [
-                {
-                  "name": "Promo Pack",
-                  "asset": [
-                    { "id": 1, "value": "Banner Copy" },
-                    { "id": 2, "value": "Promo Hub" },
-                    { "id": 3, "value": "V6" },
-                    { "id": 4, "value": "Landing Page" },
-                    { "id": 5, "value": "Social Media" },
-                    { "id": 6, "value": "PAT Page" },
-                    { "id": 7, "value": "EDS" }
-                  ]
-                },{
-                  "name": "Treasure Chest",
-                  "asset": [
-                    { "id": 1, "value": "Overlay" },
-                    { "id": 2, "value": "Inbox (CRM)" },
-                    { "id": 3, "value": "Toaster" },
-                    { "id": 4, "value": "SMS" },
-                    { "id": 5, "value": "Intro" },
-                    { "id": 6, "value": "Push (CRM)" },
-                    { "id": 7, "value": "Email (CRM)" },
-                    { "id": 8, "value": "Reminder Comms " }
-                  ]
-                }
-              ]
-        },{ 
-            "id": 2,
-            "content": [
-                {
-                  "name": "Full Promo Pack",
-                  "asset": [
-                    { "name": "HT Mobile - L", "value": "480x200" },
-                    { "name": "HT Desktop - L", "value": "1600x450" },
-                    { "name": "Hp Slider", "value": "1210x328" },
-                    { "name": "Promo Page Background", "value": "1210x328" },
-                    { "name": "Promo Page Foreground", "value": "605x328" },
-                    { "name": "Promo Hub", "value": "800x360" },
-                    { "name": "Email Banner", "value": "600x240" },
-                    { "name": "Inbox Full View", "value": "690x246" },
-                    { "name": "Inbox Overlay", "value": "420x123" },
-                    { "name": "Inbox Preview", "value": "66x65" },
-                    { "name": "Desktop LP", "value": "1920x938" },
-                    { "name": "Tablet LP", "value": "1024x1366" },
-                    { "name": "Mobile LP", "value": "828x1144" }
-                  ]
-                },
-                {
-                  "name": "Gaming Static (Standard)",
-                  "asset": [
-                    { "name": "Instagram_Twitter_Facebook", "value": "1080x1080" },
-                    { "name": "Facebook_Profile", "value": "180x180" },
-                    { "name": "Facebook_RightHand", "value": "255x133" },
-                    { "name": "CRM", "value": "335x280" },
-                    { "name": "Snapchat", "value": "360x600" },
-                    { "name": "Twitter", "value": "800x800" },
-                    { "name": "Facebook_Cover", "value": "851x315" },
-                    { "name": "Carousel", "value": "936x370" },
-                    { "name": "Android_Push", "value": "1038x600" },
-                    { "name": "iOS_Push", "value": "1038x800" },
-                    { "name": "Instagram", "value": "1080x1920" },
-                    { "name": "Snapchat", "value": "1080x1920" },
-                    { "name": "Facebook", "value": "1200x628" }
-                  ]
-                },
-                {
-                  "name": "Sports Static (Standard)",
-                  "asset": [
-                    { "name": "1038x800_iOS_Push", "value": "1038x800" },
-                    { "name": "Android_Push", "value": "1038x600" },
-                    { "name": "CRM", "value": "680x400" },
-                    { "name": "CRM", "value": "680x300" },
-                    { "name": "Sub Feature", "value": "330x348" },
-                    { "name": "CRM", "value": "335x280" },
-                    { "name": "Carousel", "value": "936x370" },
-                    { "name": "Facebook", "value": "1200x628" },
-                    { "name": "Facebook_Post", "value": "1200x900" },
-                    { "name": "Facebook_Cover", "value": "851x315" },
-                    { "name": "Facebook_RightHand", "value": "255x133" },
-                    { "name": "Facebook_Profile", "value": "180x180" },
-                    { "name": "Snapchat", "value": "360x600" },
-                    { "name": "Instagram", "value": "1080x1920" },
-                    { "name": "Snapchat", "value": "1080x1920" },
-                    { "name": "Instagram_Twitter_Facebook", "value": "1080x1080" }
-                  ]
-                }
-              ]
-        },{ 
-            "id": 3,
-            "content": [
-                {
-                  "name": "Motion Asset",
-                  "asset": [{ "name": "Promo Banner" }, { "name": "GIFs" }]
-                }
-              ]
-        },{ 
-            "id": 4,
-            "content": [
-                {
-                  "name": "Developer Assets",
-                  "asset": [
-                    { "name": "Promo Pack" },
-                    { "name": "Game Build" },
-                    { "name": "Inbox / Treasure Chest" },
-                    { "name": "Landing Page" }
-                  ]
-                }
-              ]
+      ]
+    },{ 
+      "id": 2,
+      "content": [
+        {
+          "id": 1,
+          "name": "Full Promo Pack",
+          "asset": [
+            { "name": "HT Mobile - L", "value": "480x200" },
+            { "name": "HT Desktop - L", "value": "1600x450" },
+            { "name": "Hp Slider", "value": "1210x328" },
+            { "name": "Promo Page Background", "value": "1210x328" },
+            { "name": "Promo Page Foreground", "value": "605x328" },
+            { "name": "Promo Hub", "value": "800x360" },
+            { "name": "Email Banner", "value": "600x240" },
+            { "name": "Inbox Full View", "value": "690x246" },
+            { "name": "Inbox Overlay", "value": "420x123" },
+            { "name": "Inbox Preview", "value": "66x65" },
+            { "name": "Desktop LP", "value": "1920x938" },
+            { "name": "Tablet LP", "value": "1024x1366" },
+            { "name": "Mobile LP", "value": "828x1144" }
+          ]
+        },{
+          "id": 2,
+          "name": "Gaming Static (Standard)",
+          "asset": [
+            { "name": "Instagram_Twitter_Facebook", "value": "1080x1080" },
+            { "name": "Facebook_Profile", "value": "180x180" },
+            { "name": "Facebook_RightHand", "value": "255x133" },
+            { "name": "CRM", "value": "335x280" },
+            { "name": "Snapchat", "value": "360x600" },
+            { "name": "Twitter", "value": "800x800" },
+            { "name": "Facebook_Cover", "value": "851x315" },
+            { "name": "Carousel", "value": "936x370" },
+            { "name": "Android_Push", "value": "1038x600" },
+            { "name": "iOS_Push", "value": "1038x800" },
+            { "name": "Instagram", "value": "1080x1920" },
+            { "name": "Snapchat", "value": "1080x1920" },
+            { "name": "Facebook", "value": "1200x628" }
+          ]
+        },{
+          "id": 3,
+          "name": "Sports Static (Standard)",
+          "asset": [
+            { "name": "1038x800_iOS_Push", "value": "1038x800" },
+            { "name": "Android_Push", "value": "1038x600" },
+            { "name": "CRM", "value": "680x400" },
+            { "name": "CRM", "value": "680x300" },
+            { "name": "Sub Feature", "value": "330x348" },
+            { "name": "CRM", "value": "335x280" },
+            { "name": "Carousel", "value": "936x370" },
+            { "name": "Facebook", "value": "1200x628" },
+            { "name": "Facebook_Post", "value": "1200x900" },
+            { "name": "Facebook_Cover", "value": "851x315" },
+            { "name": "Facebook_RightHand", "value": "255x133" },
+            { "name": "Facebook_Profile", "value": "180x180" },
+            { "name": "Snapchat", "value": "360x600" },
+            { "name": "Instagram", "value": "1080x1920" },
+            { "name": "Snapchat", "value": "1080x1920" },
+            { "name": "Instagram_Twitter_Facebook", "value": "1080x1080" }
+          ]
         }
-    ],
-    "scomms": [
-        { 
-            "id": 1, 
-            "name": ["Stakeholder Copy Review"] 
-        },{ 
-            "id": 2, 
-            "name": ["Stakeholder Design Review", "Stakeholder Design Assets Review"] 
-        },{ 
-            "id": 3, 
-            "name": ["Stakeholder Motion Review"] 
-        },{ 
-            "id": 4, 
-            "name": ["Stakeholder Dev Review"] 
+      ]
+    },{ 
+      "id": 3,
+      "content": [
+        {
+          "id": 1,
+          "name": "Motion Asset",
+          "asset": [{ "name": "Promo Banner" }, { "name": "GIFs" }]
         }
-    ],
-    "players": [
-        { "id": 1, "name": "All" },
-        { "id": 2, "name": "New Customers" },
-        { "id": 3, "name": "Returning Customers" },
-        { "id": 4, "name": "VIP Customers" }
-    ],
-    "priority": [
-        { "id": 1, "name": "Low" },
-        { "id": 2, "name": "Medium" },
-        { "id": 3, "name": "High" }
-    ],
-    "campaign": [
-        {"id": 1, "name": "New"},
-        {"id": 2, "name": "Recurring"},
-        {"id": 3, "name": "Promotion"}
-    ]
+      ]
+    },{ 
+      "id": 4,
+      "content": [
+        {
+          "id": 1,
+          "name": "Developer Assets",
+          "asset": [
+            { "name": "Promo Pack" },
+            { "name": "Game Build" },
+            { "name": "Inbox / Treasure Chest" },
+            { "name": "Landing Page" }
+          ]
+        }
+      ]
+    }
+  ],
+  "scomms": [
+    { 
+      "id": 1, 
+      "name": ["Stakeholder Copy Review"] 
+    },{ 
+      "id": 2, 
+      "name": ["Stakeholder Design Review", "Stakeholder Design Assets Review"] 
+    },{ 
+      "id": 3, 
+      "name": ["Stakeholder Motion Review"] 
+    },{ 
+      "id": 4, 
+      "name": ["Stakeholder Dev Review"] 
+    }
+  ],
+  "players": [
+    { "id": 1, "name": "All" },
+    { "id": 2, "name": "New Customers" },
+    { "id": 3, "name": "Returning Customers" },
+    { "id": 4, "name": "VIP Customers" }
+  ],
+  "priority": [
+    { "id": 1, "name": "Low" },
+    { "id": 2, "name": "Medium" },
+    { "id": 3, "name": "High" }
+  ],
+  "campaigns": [
+    {"id": 1, "name": "New"},
+    {"id": 2, "name": "Recurring"},
+    {"id": 3, "name": "Promotion"}
+  ],
+  "groups": [
+    { "id": "KX724IUQ", "title": "Developers" },
+    { "id": "KX7ZHSXT", "title": "Party Briefers" },
+    { "id": "KX7ZG7VR", "title": "Performance Marketing" },
+    { "id": "KX7ZHTOH", "title": "CRM" },
+    { "id": "KX7ZHVGU", "title": "Bwin Africa" },
+    { "id": "KX72LZDT", "title": "HR Group" },
+    { "id": "KX72NMZS", "title": "Compliance" },
+    { "id": "KX72NMZO", "title": "Ladbrokes Content" },
+    { "id": "KX72NMZM", "title": "Ladbrokes Mobile Marketing" },
+    { "id": "KX72KWQW", "title": "Ladbrokes Performance Group" },
+    { "id": "KX724UJY", "title": "Wrike Deployment Group" },
+    { "id": "KX72N6MZ", "title": "Coral Bingo Marketing" },
+    { "id": "KX72N7ET", "title": "Gaming Ops Team" },
+    { "id": "KX72PCZT", "title": "Ladbrokes Performance – Social and Programmatic" },
+    { "id": "KX72PCY4", "title": "Ladbrokes Ireland Gaming" },
+    { "id": "KX72PDDW", "title": "PartyCasino CRM Stakeholders" },
+    { "id": "KX72PCZM", "title": "Ladbrokes Gaming Content Delivery" },
+    { "id": "KX72PDMO", "title": "Gala Bingo" },
+    { "id": "KX72PC33", "title": "Gala Bingo Chat Stakeholders" },
+    { "id": "KX72PCZX", "title": "Ladbrokes Performance Marketing Media Buying" },
+    { "id": "KX72PCZ3", "title": "Ladbrokes Performance Marketing Paid Social" },
+    { "id": "KX72PC3B", "title": "Ladbrokes Planned CRM – Sports" },
+    { "id": "KX72PC2R", "title": "Ladbrokes Planned CRM – Omni" },
+    { "id": "KX72PDDT", "title": "PartyCasino Lobby Stakeholders" },
+    { "id": "KX72PC3H", "title": "Ladbrokes Sports Brand" },
+    { "id": "KX72PCY7", "title": "Ladbrokes Ireland Team" },
+    { "id": "KX72PC2M", "title": "Ladbrokes Customer Experience" },
+    { "id": "KX72PC2F", "title": "Ladbrokes Performance Marketing PPC" },
+    { "id": "KX72PCZD", "title": "Ladbrokes SEO" },
+    { "id": "KX72PCZV", "title": "Ladbrokes Performance Marketing Affiliates" },
+    { "id": "KX72PC3R", "title": "Ladbrokes Sports Promotions" },
+    { "id": "KX72PCZP", "title": "Ladbrokes Gaming – Marketing" },
+    { "id": "KX72PC3F", "title": "Ladbrokes Sports Social Media" },
+    { "id": "KX72PC2I", "title": "Ladbrokes Content Operations" },
+    { "id": "KX72PCZF", "title": "Ladbrokes Bingo Operations" },
+    { "id": "KX72PC2U", "title": "Ladbrokes Planned CRM – Gaming" },
+    { "id": "KX72PC23", "title": "Ladbrokes Planned CRM – Journeys" },
+    { "id": "KX72PCZN", "title": "Ladbrokes Gaming ARM/High Core (used to be VIP)" },
+    { "id": "KX72PCZH", "title": "Ladbrokes Live Casino" },
+    { "id": "KX72NOIP", "title": "Gib CRM Team (Foxy & Gala)" },
+    { "id": "KX72O5V2", "title": "Coral Marketing Brand" },
+    { "id": "KX72O5WZ", "title": "Coral Data/CRM" },
+    { "id": "KX72O5VM", "title": "Retail Sports Marketing" },
+    { "id": "KX72O5VK", "title": "Coral Perf. Mktg" },
+    { "id": "KX72O5UM", "title": "Coral Sports Content Ops" },
+    { "id": "KX72O5W4", "title": "Coral CX" },
+    { "id": "KX72O5UN", "title": "Coral Product" },
+    { "id": "KX72O5WG", "title": "Coral Gaming Marketing" },
+    { "id": "KX72O5UX", "title": "Coral Planned CRM" },
+    { "id": "KX72O5WL", "title": "Coral Live Casino Commercial" },
+    { "id": "KX72O5VU", "title": "Coral Mktg Promotions" },
+    { "id": "KX72N3XM", "title": "Foxy Games" },
+    { "id": "KX72N2WG", "title": "Cheeky Bingo Marketing" },
+    { "id": "KX72NZA3", "title": "Foxy Marketing" },
+    { "id": "KX72NSLO", "title": "Gala-Foxy CX Team" },
+    { "id": "KX72NWYQ", "title": "FC Ops Group" },
+    { "id": "KX72OJXU", "title": "Gaming Team" },
+    { "id": "KX72NKBA", "title": "GB Brand" },
+    { "id": "KX72NKBD", "title": "GS Brand" },
+    { "id": "KX72NKBE", "title": "GC Brand" },
+    { "id": "KX72MCTR", "title": "Coral High Core" },
+    { "id": "KX72LJCY", "title": "Creative Game Descriptions Group" },
+    { "id": "KX72KHZS", "title": "Retail Gaming Marketing" },
+    { "id": "KX7ZZRUR", "title": "Creative Producer" },
+    { "id": "KX7ZVFLQ", "title": "Mother Tongue" },
+    { "id": "KX7ZUEWY", "title": "Party Poker" },
+    { "id": "KX7ZUEWM", "title": "Party Poker EU" },
+    { "id": "KX7ZUEWJ", "title": "Party Poker IT" },
+    { "id": "KX7ZUEWC", "title": "Party Casino" },
+    { "id": "KX7ZUEWV", "title": "Party Sports" },
+    { "id": "KX7ZUEWR", "title": "Party Poker VIP" },
+    { "id": "KX7ZSRCH", "title": "Brand Approvers" }
+  ]
 }

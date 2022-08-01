@@ -36,8 +36,22 @@ li {
     font-size: 12px;
 }
 
-.pd_titleborder {
-    border-top: 1px solid #b1b1b1;
+.ql-toolbar {
+    border: 1px solid #ced4da;
+    border-radius: 10px 10px 0 0;
+    background-color: #f2f2f2;
+}
+.ql-toolbar button {
+    margin-bottom: 1px;
+}
+.ql-container {
+    border: 1px solid #ced4da;
+    border-radius: 0 0 10px 10px;
+    background-color: #f2f2f2;
+    overflow: visible;
+}
+.ql-editor {
+    max-height: 150px;
 }
 
 

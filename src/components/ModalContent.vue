@@ -1,27 +1,57 @@
 <template>
-    <div class="container w-75">
+    <div>
         <task-header :title="label"/>
         <multi-select :assets="option"/>
-        <text-field label="Any additional instructions / Restrictions"/>
+        <text-field-modal 
+            :name="name" 
+            v-model:Copy="Copy" 
+            v-model:Design="Design" 
+            v-model:Motion="Motion" 
+            v-model:Developer="Developer" 
+            label="Any additional instructions / Restrictions"
+        />
+        {{ inputCopy }}
     </div>
 </template>
 <script>
 
-import TextField from '../components/TextField.vue'
+import TextFieldModal from '../components/TextFieldModal.vue'
 import TaskHeader from '../components/TaskHeader.vue'
 import MultiSelect from '../components/MultiSelect.vue'
+import { ref } from "vue";
 export default {
     name: "ModalContent",
     components: {
-        TextField,
+        TextFieldModal,
         TaskHeader,
         MultiSelect,
         
     },
     props: {
         label: String,
-        option: Object
+        name: String,
+        option: Object,
     },
+    setup() {
+    const Copy = ref("");
+    const Design = ref("");
+    const Motion = ref("");
+    const Developer = ref("");
+
+    return {
+      Copy,
+      Design,
+      Motion,
+      Developer,
+    };
+  },
+  created() {},
+  computed: {
+    inputCopy() {
+    console.log(this.Copy);
+      return this.Copy;
+    },
+  }
 }
 </script>
 <style lang="scss">
